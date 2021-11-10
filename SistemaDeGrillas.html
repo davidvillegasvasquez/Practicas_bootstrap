@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <title>El sistema de grillas</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center"><!--Definimos la primera fila. Le dimos pesos iguales de 3 (recuerde que la suma total en una fila no debe ser mayor a 12, lo que nos dá un contenido de fila menor en las 5 filas restantes que definimos. Fíjese como centramos el contenido de la fila con "justify-content-center", con respecto al container, que por defecto viene centrado en mín.-->
+      <!-- &nbsp&nbsp&nbsp&nbsp: Pódriamos centrar con espacio vacío html, pero esto no funcionaría para el modelo responsivo que necesitan los diferentes dispositivos clientes. -->
+      <div class="col-xxl-3"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-xxl-3"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-xxl-3"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+    <hr>
+    <!-- Para esta fila, usamos 2, 4 y 6 para el ancho de cada una de las tres columnas. Aquí no se puede centrar nada, porque abarca las tres columnas abarcan el ancho total. -->
+    <div class="row">
+      <div class="col-xl-2"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-xl-4"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-xl-6"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+    <hr>
+    <!-- Para esta fila, usamos 4, 4 y 5, lo que nos da un total de trece, que se pasa por uno el peso máximo que debe tener la fila, que no debe ser mayor que el del body, que es 12. -->
+    <div class="row">
+      <div class="col-lg-4"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-lg-4"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-lg-5"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+    <hr>
+    <!-- Las clases col- vienen en diferentes tamaños: small (sm), medium(md), large(lg), extralarge (xl), y significa que colapsarán cuando se desplieguen en dispositivos de 992, 768, 576, etc. px de resolución, en su proceso de adaptación de modelo responsivo. Si no tiene calificador de tamaño, nunca colapsarán.-->
+    <div class="row">
+      <div class="col-md-4"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-md-4"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-md-4"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-sm-4"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-sm-4"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-sm-4"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+    <!-- Entre la 5ta y sexta fila no colocamos regla horizontal (<hr>), y se ve así (pegadas). -->
+
+    <div class="row">
+      <div class="col-4"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-4"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-4"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+  </div> 
+</body>
+</html>

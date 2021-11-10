@@ -1,0 +1,23 @@
+# Mini Guía rápida gitignore:
+# En proyectos dónde hay varios archivos con el mismo nombre, por ej tres (3) archivo.eln, uno en la raíz y los otros dos en Carpeta1 y Carpeta2 respectivamente:
+# Si colocamos archivo.eln a secas, no rastreará ninguno de los que exista en el proyecto (los tres). 
+# Si colocamos /archivo.eln, no rastreará al que está en la raíz, pero rastreará los que están en los directorios:
+# Si colocamos Directorio1/archivo.eln o Directorio2/archivo.eln, no rastreará el archivo.eln que se encuentre en el directorio indicado a git.
+# No rastrear Directorios (carpetas): se hace con el nombre a secas de dicha carpeta.
+#Si dejamos de rastrear un archivo en el proceso, git seguirá indicando que lo modificamos al hacerlo. Para ello debemos resetear, estaguear y comitar:
+#git rm -r --cached .
+#git add .
+#git commit -m 'Removing ignored files'
+#Recordar que cada proposición usa una línea exclusivamente para dicha proposición, y los comentarios se hacen con numeral (como en python).
+#Fin miniguía.
+
+
+# No rastrearemos el contenido de css ni js:
+css
+js
+
+
+
+
+
+
