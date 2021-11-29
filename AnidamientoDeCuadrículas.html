@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Aquí va el título pestaña</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+</head> 
+<body> 
+  <div class="container" style="background-color:#aaa">
+    <!-- Aquí va el contenido distribuido en columnas y filas (grilla). -->
+    <!-- Apertura fila1 de container: --> 
+    <div class="row" style="background-color:#bbb">
+    <!-- Columna1 en fila1 de container: --> 
+       <div class="col" style="background-color:#ccc">
+         1x1
+       </div>
+       <div class="col" style="background-color:#ddd">
+          <!-- Y dentro de esta cuadrícula metemos la cuadrícula anidada en 1x2: -->
+          <div class="row" style="background-color:#aaa"> <!--1erFila cuadricula anidada-->
+             <div class="col" style="background-color:#bbb">
+                1x2x1x1
+             </div>
+             <div class="col" style="background-color:#ccc">
+                1x2x1x2
+             </div>
+          </div><!--cierre 1erFila cuadrianidada.-->
+          <!--2da Fila cuadricula anidada:--> 
+          <div class="row" style="background-color:#ddd">
+             <div class="col" style="background-color:#aaa">
+                1x2x2x1
+             </div>
+             <div class="col" style="background-color:#bbb">
+                1x2x2x2
+             </div><!-- Cierre column2 fila2 de la anidada en 1x2 de container -->  
+          </div><!-- Cierre fila2 de cuadrianidada en 1x2 de container-->
+          
+        </div>  <!-- Cierre column2 fila1 de container -->
+    
+     </div><!-- Cierre fila1 de container -->
+        <!-- Apertura fila2 de container: -->
+     <div class="row" style="background-color:#aaa">  
+         <div class="col" style="background-color:#bbb">
+            2x1
+         </div>
+         <div class="col" style="background-color:#ccc">
+            2x2
+         </div> 
+     
+     </div><!-- Cierre 2da fila de continer: -->
+      
+      <!-- Apertura 3ra fila de container (con tres columnas: la primera con tres filas anidadas y la tercera con tres columnas anidadas -una cuadrícula de 1x3: -->
+     <div class="row" style="background-color:#bbb">  
+     
+         <div class="col" style="background-color:#ccc">
+            <div class="row" style="background-color:#ccc">
+            3x1x1x1
+            </div>
+            <div class="row" style="background-color:#ddd">
+            3x1x2x1
+            </div>
+            <div class="row" style="background-color:#eee">
+            3x1x2x1
+            </div>
+         </div>
+         <div class="col" style="background-color:#aaa">
+            3x2
+         </div> 
+     <!-- La 3ra colum de esta 3ra fila debe tener 3 columnas anidadas, de modo que debe tener una fila anidada, es decir, es una cuadrícula anidada de 1x3. Pero una fila anidada no rellenará la fila contenedora, así colocaremos dentro de la columna contenida, un contenedor: -->
+         <div class="col" style="background-color:#ddd">
+           <!-- Usando la utilidad height establecida en 100%, indicamos que la fila ocupe el 100% del alto disponible:-->
+           <div class="row h-100" style="background-color:#ddd">
+               <div class="col" style="background-color:#bbb">
+                  1x1
+               </div>
+               <div class="col" style="background-color:#fff">
+                  1x2
+               </div>
+               <div class="col" style="background-color:#ddd">
+                  1x3
+               </div>
+            </div>
+         </div><!-- Cierre de colum3 de fila3-->
+           
+     </div><!-- Cierre 3ra fila de container --> 
+      
+  </div><!-- Cierre de container: -->
+    
+</body> 
+</html> 

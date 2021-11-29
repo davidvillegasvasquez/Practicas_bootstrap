@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Columnas iguales</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- O podemos accesar a la librería bootstrap desde su red de entrega de contenido (content delivery network, cdn), a través del link https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css, referido con el apuntador de referencia de hipertexto, href, dentro de la etiqueta link. -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"> 
+</head> 
+<body> 
+  <div class="container">
+    <!-- Aquí va el contenido distribuido en columnas y filas (grilla). -->
+     <div class="row"><!--1era fila (fila1)-->
+        <div class="col" style="background-color:#aaa">
+          <p>fila1,col1 columnas del mismo ancho por no haber especificado su tamaño.</p>
+        </div>
+        <div class="col" style="background-color:#bbb">
+          <p>fila1,col2 columnas del mismo ancho por no haber especificado su tamaño.</p>
+        </div>
+        <div class="col" style="background-color:#ccc">
+          <p>fila1,col3 columnas del mismo tamaño por no haber especificado su tamaño.</p>
+        </div>
+        
+     </div>
+     
+     <hr>
+     
+     <div class="row">
+       <div class="col" style="background-color:#aaa">
+          <p>fila2,col1 columnas del mismo ancho que la tercera por no haber especificado su ancho.</p>
+        </div>
+        <div class="col-6" style="background-color:#bbb">
+          <p>fila2,col2 columna más ancha a la cual asigne valor de 6 (la mitad del ancho total del contenerdor.</p>
+        </div>
+        <div class="col" style="background-color:#ccc">
+          <p>fila2,col3 columnas del mismo tamaño por no haber especificado su tamaño.</p>
+          
+     </div>
+     
+  </div> 
+</body> 
+</html> 
